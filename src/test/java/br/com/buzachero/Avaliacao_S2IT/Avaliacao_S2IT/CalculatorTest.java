@@ -5,7 +5,7 @@ import org.junit.Test;
 
 
 public class CalculatorTest {	
-		
+	
 	@Test
 	public void numberA10256AndNumberB512_ShouldReturnMinus1() {
 		assertEquals(-1, Calculator.calculateNumberC(10256, 512));
