@@ -1,4 +1,4 @@
-package br.com.buzachero.Avaliacao_S2IT.Avaliacao_S2IT;
+package br.com.buzachero;
 
 public class Calculator {
 	

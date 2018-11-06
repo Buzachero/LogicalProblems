@@ -1,4 +1,4 @@
-package br.com.buzachero.Avaliacao_S2IT.Avaliacao_S2IT;
+package br.com.buzachero;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
