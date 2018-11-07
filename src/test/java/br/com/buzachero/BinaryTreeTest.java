@@ -31,6 +31,16 @@ public class BinaryTreeTest
 	private static BinaryTree binaryTreeNode100 = null;
 	private static BinaryTree binaryTreeNode200 = null;
 	
+	private static BinaryTree rootBinaryTreeNodeC = null;
+	private static BinaryTree binaryTreeNode15 = null;
+	private static BinaryTree binaryTreeNode25 = null;
+	private static BinaryTree binaryTreeNode35 = null;
+	
+	private static BinaryTree rootBinaryTreeNodeD = null;
+	private static BinaryTree binaryTreeNode45 = null;
+	private static BinaryTree binaryTreeNode55 = null;
+	private static BinaryTree binaryTreeNode65 = null;
+	
 	private static BinaryTree uniqueNode = null;
 	
 	@BeforeClass
@@ -43,12 +53,12 @@ public class BinaryTreeTest
 	 */
 
 	@Test
-	public void calculateSumBinaryTreeA_AfterNodeNull_ShouldReturn0() {
+	public void calculateSumInNodeNull_ShouldReturn0() {
 		assertEquals(0, BinaryTree.calculateSumOfSubsequentNodes(null));
 	}
 	
 	@Test
-	public void calculateSumBinaryTreeA_AfterNode1_ShouldReturn27() {		
+	public void calculateSumBinaryTreeA_AfterRootNodeA_ShouldReturn27() {		
 		assertEquals(27, BinaryTree.calculateSumOfSubsequentNodes(rootBinaryTreeNodeA));
 	}
 	
@@ -139,9 +149,56 @@ public class BinaryTreeTest
 	}
 	
 	@Test
-	public void calculateSumBinaryTreeB_AfterNode10_ShouldReturn430() {
+	public void calculateSumBinaryTreeB_AfterRootNodeB_ShouldReturn740() {
 		assertEquals(740, BinaryTree.calculateSumOfSubsequentNodes(rootBinaryTreeNodeB));
 	}
+	
+	/*
+	 * TEST CASE FOR BINARY TREE C
+	 */		
+	@Test
+	public void calculateSumBinaryTreeC_AfterNode35_ShouldReturn0() {
+		assertEquals(0, BinaryTree.calculateSumOfSubsequentNodes(binaryTreeNode35));
+	}
+	
+	@Test
+	public void calculateSumBinaryTreeC_AfterNode25_ShouldReturn35() {
+		assertEquals(35, BinaryTree.calculateSumOfSubsequentNodes(binaryTreeNode25));
+	}
+	
+	@Test
+	public void calculateSumBinaryTreeC_AfterNode15_ShouldReturn60() {
+		assertEquals(60, BinaryTree.calculateSumOfSubsequentNodes(binaryTreeNode15));
+	}
+	
+	@Test
+	public void calculateSumBinaryTreeC_AfterRootNodeC_ShouldReturn75() {
+		assertEquals(75, BinaryTree.calculateSumOfSubsequentNodes(rootBinaryTreeNodeC));
+	}
+	
+	/*
+	 * TEST CASE FOR BINARY TREE D
+	 */		
+	@Test
+	public void calculateSumBinaryTreeD_AfterNode65_ShouldReturn0() {
+		assertEquals(0, BinaryTree.calculateSumOfSubsequentNodes(binaryTreeNode65));
+	}
+	
+	@Test
+	public void calculateSumBinaryTreeD_AfterNode55_ShouldReturn65() {
+		assertEquals(65, BinaryTree.calculateSumOfSubsequentNodes(binaryTreeNode55));
+	}
+	
+	@Test
+	public void calculateSumBinaryTreeD_AfterNode45_ShouldReturn120() {
+		assertEquals(120, BinaryTree.calculateSumOfSubsequentNodes(binaryTreeNode45));
+	}
+	
+	@Test
+	public void calculateSumBinaryTreeD_AfterRootNodeD_ShouldReturn165() {
+		assertEquals(165, BinaryTree.calculateSumOfSubsequentNodes(rootBinaryTreeNodeD));
+	}
+	
 	
 	/*
 	 * TEST CASE FOR BINARY TREE WITH UNIQUE NODE
@@ -193,10 +250,10 @@ public class BinaryTreeTest
 		binaryTreeNode7.setLeft(null);
 		binaryTreeNode7.setRight(null);
 		
+		
 		/*
 		 * INITIALIZING BinaryTree B
-		 */
-				
+		 */				
 		rootBinaryTreeNodeB = new BinaryTree();
 		binaryTreeNode20 = new BinaryTree();
 		binaryTreeNode30 = new BinaryTree();
@@ -252,11 +309,58 @@ public class BinaryTreeTest
 		binaryTreeNode200.setValor(200);
 		binaryTreeNode200.setLeft(null);
 		binaryTreeNode200.setRight(null);
+				
+		/*
+		 * INITIALIZING BinaryTree C
+		 */		
+		rootBinaryTreeNodeC = new BinaryTree();
+		binaryTreeNode15 = new BinaryTree();
+		binaryTreeNode25 = new BinaryTree();
+		binaryTreeNode35 = new BinaryTree();
 		
+		rootBinaryTreeNodeC.setValor(1);
+		rootBinaryTreeNodeC.setLeft(binaryTreeNode15);
+		rootBinaryTreeNodeC.setRight(null);
+		
+		binaryTreeNode15.setValor(15);
+		binaryTreeNode15.setLeft(binaryTreeNode25);
+		binaryTreeNode15.setRight(null);
+		
+		binaryTreeNode25.setValor(25);
+		binaryTreeNode25.setLeft(binaryTreeNode35);
+		binaryTreeNode25.setRight(null);
+		
+		binaryTreeNode35.setValor(35);
+		binaryTreeNode35.setLeft(null);
+		binaryTreeNode35.setRight(null);
+				
+		/*
+		 * INITIALIZING BinaryTree D
+		 */		
+		rootBinaryTreeNodeD = new BinaryTree();
+		binaryTreeNode45 = new BinaryTree();
+		binaryTreeNode55 = new BinaryTree();
+		binaryTreeNode65 = new BinaryTree();
+		
+		rootBinaryTreeNodeD.setValor(1);
+		rootBinaryTreeNodeD.setLeft(null);
+		rootBinaryTreeNodeD.setRight(binaryTreeNode45);
+		
+		binaryTreeNode45.setValor(45);
+		binaryTreeNode45.setLeft(null);
+		binaryTreeNode45.setRight(binaryTreeNode55);
+		
+		binaryTreeNode55.setValor(55);
+		binaryTreeNode55.setLeft(null);
+		binaryTreeNode55.setRight(binaryTreeNode65);
+		
+		binaryTreeNode65.setValor(65);
+		binaryTreeNode65.setLeft(null);
+		binaryTreeNode65.setRight(null);
+				
 		/*
 		 * INITIALIZING BinaryTree WITH UNIQUE NODE
-		 */				
-		
+		 */		
 		uniqueNode = new BinaryTree(300, null, null);
 	}
 }
