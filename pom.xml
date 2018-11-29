@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>br.com.buzachero.Avaliacao_S2IT</groupId>
-	<artifactId>Avaliacao_S2IT</artifactId>
+	<groupId>br.com.buzachero</groupId>
+	<artifactId>LogicalProblems</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>Avaliacao_S2IT</name>
+	<name>LogicalProblems</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
