@@ -80,7 +80,18 @@ Max money to spend = 9
 SOLUTION
 br/com/buzachero/EletronicsShop.java
 
+----------------------------------------------------
+CATS AND MOUSE
+----------------------------------------------------
+Given:
+1. Cat A position x;
+2. Cat B position y;
+3. Mouse C position z;
 
+Determine which cat will take the mouse first.
+- If cat A arrives first, print "Cat A";
+- If cat B arrives first, print "Cat B";
+- If both cats arrive at the same time, print "Mouse C". 
   
 
 
