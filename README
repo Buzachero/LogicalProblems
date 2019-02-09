@@ -64,6 +64,23 @@ Matrix =
  
 SOLUTION
 br/com/buzachero/Matrix.java 
+
+----------------------------------------------------
+ELETRONICS SHOP
+----------------------------------------------------
+Given two arrays of prices, one for keyboards and another one for USB drive, and a budget to spend on these items, it is required to calculate 
+the maximum money to spend.
+
+EXAMPLE
+keyboard prices = [3 1]
+USB drives prives = [5 2 8]
+budget = 10
+Max money to spend = 9
+
+SOLUTION
+br/com/buzachero/EletronicsShop.java
+
+
   
 
 
